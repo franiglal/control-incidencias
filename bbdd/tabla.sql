@@ -1,0 +1,11 @@
+CREATE DATABASE CONTROLINCIDENCIAS;
+CREATE TABLE INCIDENCIAS (
+VU VARCHAR(17) PRIMARY KEY,
+cliente VARCHAR(4) NOT NULL,
+centro VARCHAR(60) NOT NULL,
+sintoma VARCHAR(40) NOT NULL,
+estado VARCHAR(10) NOT NULL DEFAULT 'en proceso' CHECK (estado in ('en proceso','parada','resuelta','cerrada')),
+vantive INTEGER(7) UNSIGNED UNIQUE,
+sirio VARCHAR(6) UNIQUE,
+observaciones VARCHAR(100)
+);
