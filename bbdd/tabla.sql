@@ -7,5 +7,6 @@ sintoma VARCHAR(40) NOT NULL,
 estado VARCHAR(10) NOT NULL DEFAULT 'en proceso' CHECK (estado in ('en proceso','parada','resuelta','cerrada')),
 vantive INTEGER(7) UNSIGNED UNIQUE,
 sirio VARCHAR(6) UNIQUE,
+dnx VARCHAR(7) NOT NULL,
 observaciones VARCHAR(100)
 );
