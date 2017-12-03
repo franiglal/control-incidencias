@@ -16,41 +16,55 @@
   <secction>
     <article id="entrada1" class="entrada1">
       <h3>Incidencia</h3>
-        <li> 
+      <form class="formulario">
+        <div class="incidencia">
           <label for="incidencia">Incidencia VU: </label>
-          <input type="text" id="incidencia" class="incidencia"/>     
-        
-        <li> 
-          <label for="cliente">Cliente: </label>
-          <input type="text" id="cliente" class="cliente"/> 
-        </li>
-        <li> 
-          <label for="sede">Sede: </label>
-          <input type="text" id="sede" class="sede"/> 
-        </li>
-        <li> 
+          <input type="text" id="incidencia" required value="incidencia"/>
+        </div>
+        <div class="cliente">
+          <label for="sacyl">
+            <input type="radio" id="sacyl" name="cliente" value="sacyl"/>sacyl
+          </label>
+          <label for="jcyl">
+            <input type="radio" id="jcyl" name="cliente" value="jcyl"/>jcyl
+          </label>
+        </div>
+        <div>
+          <datalist id="listas">
+            <option value="proceso">
+            <option value="parada">
+            <option value="resuelta">
+            <option value="cerrada">
+          </datalist>
+
+          <label for="estado">Estado: </label>
+          <input id="estado" name="estado" list="listas" value="estado">
+        </div>
+        <div>
           <label for="causa">Causa: </label>
-          <input type="text" id="causa" class="causa"/> 
-        </li>
-        <li> 
+          <input type="text" id="causa" required value="causa"/>
+        </div>
+        <div>
           <label for="vantive">Vantive: </label>
-          <input type="text" id="vantive" class="vantive"/> 
-        </li>
-        <li> 
+          <input type="text" id="vantive" value="vantive"/>
+        </div>
+        <div>
           <label for="sirio">Sirio: </label>
-          <input type="text" id="sirio" class="sirio"/> 
-        </li>
-    </article>
-    <article id="entrada2" class="entrada2">
-      <li> 
+          <input type="text" id="sirio" value="sirio"/>
+        </div>
+        <div>
           <label for="comentarios">Comentarios</label>
-           <textarea id="msg" class="comentarios"></textarea>
-      </li>
+          <textarea id="comentarios" name="comentarios" cols="30" rows="7"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Guardar"/>
+          <input type="submit" value="Buscar"/>
+        </div>
+      </form>
     </article>
     <article>
-      <button class="boton">Añadir</button> 
-      <button class="boton">limpiar</button> 
-      <button class="boton">buscar</button> 
+      VISOR
+      Ventanilla - Cliente - Sede - Causa - Vantive - Sirio - Comentario
     </article>
   </secttion>
   <footer class="footer">
