@@ -1,11 +1,16 @@
+
+.incio {
+	margin: 50px;
+}
+
 .entrada1 {
 	font-family: 'Allerta', sans-serif;
-	font-size: 24px;
+	font-size: 12px;
 }
 
 .entrada2 {
 	font-family: 'Allerta', sans-serif;
-	font-size: 24px;
+	font-size: 12px;
 }
 
 .logotipo {
@@ -17,11 +22,59 @@
 
 .body {
 	background-image: url(../images/fondo.jpg);
-	margin: 60px;
+	margin: 0;
 }
 
 .footer {
-	margin-top: 100px;
+	margin-top: 10px;
 	font-size: 8px;
 	color: red;
 }
+
+.contenedor {
+	width: 800px;
+	margin: auto;
+}
+
+.boton1, .boton2 {
+	border-radius: 8px;
+	margin-left:  20px;
+	margin-top: 10px;
+}
+
+.cliente, .estado, .causa, .vantive, .sirio, .comentarios{
+	margin-top: 10px;
+}
+
+.formulario {
+	padding-left: 20px;
+	padding: 10px;
+	/*margen*/
+	margin: 30px;
+	/*overflow: hidden;*/
+	border: 1px solid #1F313C;
+	border-radius: 8px;
+
+}
+.formulario input {
+	padding-right: 20px;
+
+}
+
+.formulario label {
+	display: flex;
+
+
+}
+
+.comentarios {
+	
+
+}
+
+.incidencias {
+	display: inline-block;
+}
+
+ 
+
