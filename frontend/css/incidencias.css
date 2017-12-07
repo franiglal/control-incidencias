@@ -42,10 +42,24 @@
 	margin-top: 10px;
 }
 
+.boton3 {
+	border-radius: 8px;
+	margin-left: 300px;
+
+
+}
+
 .cliente, .estado, .causa, .vantive, .sirio, .comentarios{
 	margin-top: 10px;
 }
 
+.usuario, .passw{
+	margin-top: 30px;
+	margin-left: 100px;
+	margin-bottom: 40px;
+	display: inline-block;
+
+}
 .formulario {
 	padding-left: 20px;
 	padding: 10px;
@@ -68,13 +82,10 @@
 }
 
 .comentarios {
-	
+
 
 }
 
 .incidencias {
 	display: inline-block;
 }
-
- 
-
