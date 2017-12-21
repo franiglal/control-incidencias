@@ -13,64 +13,82 @@
       <img src="images/escudo-jcyl.gif" alt="logotipo"/>
     </figure>
   </header>
-  <section>
-    <article id="entrada1" class="entrada1 contenedor">
-      <h3>Incidencia</h3>
-      <form class="formulario">
-        <div class="incidencia">
-          <label for="incidencia">Incidencia VU: </label>
-          <input type="text" id="incidencia" required name="inicidencias"/>
-        </div>
-        <div class="cliente">
+  <main>
+    <section>
+      <article id="entrada1" class="entrada1 contenedor">
+        <h3>Incidencia</h3>
+        <form class="formulario">
+          <div class="incidencia">
+            <label for="incidencia">Incidencia VU: </label>
+            <input type="text" id="incidencia" required name="inicidencias"/>
+          </div>
+          <div class="cliente">
+            <label for="cliente">Cliente: 
+              <select name="cliente" id="cliente">
+                <option value="sacyl">sacyl</option>
+                <option value="jcyl">jcyl</option>
+                <option value="itacyl">itacyl</option>
+                <option value="fmcyl">FMcyl</option>
+              </select>
+            </label>
+          </div>
+        <!-- <div class="cliente">
           <label for="sacyl">
             <input type="radio" checked id="sacyl" name="cliente" value="sacyl"/>SACYL
           </label>
           <label for="jcyl">
             <input type="radio" id="jcyl" name="cliente" value="jcyl"/>JCYL
           </label>
-        </div>
-        <div class="sede">
-          <label for="sede">Sede: </label>
-          <input type="text" id="sede" required name="sede"/>
-        </div>
-        <div class="estado">
-          <label for="estado">Estado: 
-            <select name="listas" id="listas">
-              <option value="proceso">En proceso</option>
-              <option value="parada">Parada</option>
-              <option value="resuelta">Resuelta</option>
-              <option value="cerrada">Cerrada</option>
-            </select>
-         </label>
+          <label for="jcyl">
+            <input type="radio" id="jcyl" name="cliente" value="jcyl"/>JCYL
+          </label>
+          <label for="jcyl">
+            <input type="radio" id="jcyl" name="cliente" value="jcyl"/>JCYL
+          </label>
+        </div> -->
+          <div class="sede">
+            <label for="sede">Sede: </label>
+            <input type="text" id="sede" required name="sede"/>
+          </div>
+          <div class="estado">
+            <label for="estado">Estado: 
+              <select name="listas" id="listas">
+                <option value="proceso">En proceso</option>
+                <option value="parada">Parada</option>
+                <option value="resuelta">Resuelta</option>
+                <option value="cerrada">Cerrada</option>
+              </select>
+            </label>
           <!-- <input id="estado" name="estado" list="listas" name="listas"> -->
-        </div>
-        <div class="causa">
-          <label for="causa">Causa: </label>
-          <input type="text" id="causa" required name="causa"/>
-        </div>
-        <div class="vantive">
-          <label for="vantive">Vantive: </label>
-          <input type="text" id="vantive" name="vantive"/>
-        </div>
-        <div class="sirio">
-          <label for="sirio">Sirio: </label>
-          <input type="text" id="sirio" name="sirio"/>
-        </div>
-        <div class="comentarios">
-          <label for="comentarios">Comentarios</label>
-          <textarea id="comentarios" name="comentarios" cols="30" rows="7"></textarea>
-        </div>
-        <div class="boton">
-          <input type="submit" value="Guardar" class="boton1"/>
-          <input type="submit" value="Buscar" class="boton2"/>
-        </div>
-      </form>
-    </article>
+          </div>
+          <div class="causa">
+            <label for="causa">Causa: </label>
+            <input type="text" id="causa" required name="causa"/>
+          </div>
+          <div class="vantive">
+            <label for="vantive">Vantive: </label>
+            <input type="text" id="vantive" name="vantive"/>
+          </div>
+          <div class="sirio">
+            <label for="sirio">Sirio: </label>
+            <input type="text" id="sirio" name="sirio"/>
+          </div>
+          <div class="comentarios">
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" cols="30" rows="7"></textarea>
+          </div>
+          <div class="boton">
+            <input type="submit" value="Guardar" class="boton1"/>
+            <input type="submit" value="Buscar" class="boton2"/>
+          </div>
+        </form>
+      </article>
    <!--  <article>
       VISOR
       Ventanilla - Cliente - Sede - Causa - Vantive - Sirio - Comentario
     </article> -->
-  </section>
+    </section>
+  </main>
   <footer class="footer">
     <div class="contenedor">
       By afisoft.
