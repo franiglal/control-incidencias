@@ -40,17 +40,21 @@
 	border-radius: 8px;
 	margin-left:  20px;
 	margin-top: 10px;
+	text-align: center;
 }
 
 .boton3 {
 	border-radius: 8px;
 	margin-left: 300px;
+	text-align: center;
 
 
 }
 
-.cliente, .sede, .estado, .causa, .vantive, .sirio, .comentarios{
+.cliente, .sede, .estado, .causa, .vantive, .sirio{
 	margin-top: 10px;
+
+
 }
 
 .usuario, .passw{
@@ -82,10 +86,30 @@
 }
 
 .comentarios {
-
+float: right;
 
 }
 
 .incidencias {
 	display: inline-block;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	background: #273b47;
+	color: white;
+
+}
+
+td {
+	padding: 20px;
+
+}
+
+table, td, th {
+	border: 1px solid #273b47;
+	
 }
